@@ -16,6 +16,7 @@ body {
   float:right;
   list-style: none;
   margin-top: 40px;
+  margin-right: 40px;
 }
 
 .main-nav li {
@@ -30,19 +31,49 @@ body {
 }
 
 .main-nav li.active a {
-  border: 1px solid white;
+  border: 1px solid orange;
 }
 
 .main-nav li a:hover {
-  border: 1px solid white;
+  border: 1px solid orange;
+}
+
+.main-content {
+  /* background-color: lightgray; */
+  margin-top: 450px;
+  padding: 10px;
+
+}
+
+.card {
+  background-color: white;
+  opacity: 0.75;
+  display: inline-block;
+  margin-left: 30px;
+  max-width: 30%;
+  text-align: center;
+  padding: 10px;
+  border: 3px solid orange;
+  border-radius: 10px;
+}
+.card p {
+color: orange;
+
 }
 
 .logo {
   color: white;
   float: left;
   margin: 20px;
-
 }
+
+aside {
+  float: left;
+}
+/* .logo h1 {
+  font-size: 20px;
+} */
+
 /* .row {
   max-width: 1200px;
   margin: auto;
@@ -54,7 +85,17 @@ body {
     margin-top: 0px;
 
 }
+/* .hero p {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+    
 
+} */
+
+.row h1 {
+  font-size: 40px;
+}
 
 h1 {
   color: white;
@@ -64,16 +105,24 @@ h1 {
   margin-top: 400px;
 }
 
-.button {
-  margin-top: 30px;
-  /* margin-left: 440px; */
+p {
+  text-align: center;
+  margin-bottom: 20px;
 }
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10px; */
+}
+  
+
 .btn {
   border:  1px solid white;
   padding:10px 30px;
   color: white;
   text-decoration: none;
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -92,7 +141,9 @@ h1 {
 }
 
 .container p {
-  color: white;
+  color: orange;
+  display: flex;
+  justify-content: center;
 }
 
 #showcase h1{
@@ -102,6 +153,47 @@ h1 {
 
 }
 
-#showcase p{
+aside#sidebar {
+  background-color: #cccccc ;
+  float: left;
+  width: 30%;
+  margin-top: 450px;
+  margin-left: 40px;
+  padding: 40px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: 1px solid darkorange;
+}
+
+aside#sidebar h3 {
+  font-size: 30px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#services li {
+  list-style: none;
+  padding: 20px;
+  border: darkorange solid 1px;
+  margin-bottom: 5px;
+  background:#cccccc;
+  border-radius: 10px;
+}
+
+article h3 {
   font-size: 20px;
 }
+
+article#main-col {
+  float: right;
+  width: 60%;
+  margin-right: 40px;
+}
+
